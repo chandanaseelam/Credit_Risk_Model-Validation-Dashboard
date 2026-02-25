@@ -1,0 +1,59 @@
+{
+  "model_choice": "rf",
+  "roc_auc": 0.5139832070707071,
+  "pr_auc": 0.010993625386731057,
+  "alert_rate": 0.01,
+  "threshold_test": 0.07856000586051508,
+  "threshold_full": 0.09586765395194702,
+  "confusion_matrix": [
+    [
+      19603,
+      197
+    ],
+    [
+      197,
+      3
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9900505050505051,
+      "recall": 0.9900505050505051,
+      "f1-score": 0.9900505050505051,
+      "support": 19800.0
+    },
+    "1": {
+      "precision": 0.015,
+      "recall": 0.015,
+      "f1-score": 0.015,
+      "support": 200.0
+    },
+    "accuracy": 0.9803,
+    "macro avg": {
+      "precision": 0.5025252525252525,
+      "recall": 0.5025252525252525,
+      "f1-score": 0.5025252525252525,
+      "support": 20000.0
+    },
+    "weighted avg": {
+      "precision": 0.9803,
+      "recall": 0.9803,
+      "f1-score": 0.9803,
+      "support": 20000.0
+    }
+  },
+  "numeric_features": [
+    "TransactionID",
+    "Amount",
+    "MerchantID",
+    "txn_hour",
+    "txn_dayofweek",
+    "txn_day",
+    "txn_month"
+  ],
+  "categorical_features": [
+    "TransactionType",
+    "Location"
+  ],
+  "target_col": "IsFraud"
+}
