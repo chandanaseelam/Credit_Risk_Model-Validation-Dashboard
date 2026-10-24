@@ -1,0 +1,74 @@
+{
+  "model_choice": "logistic_regression",
+  "evaluation_split": "chronological_60_20_20",
+  "roc_auc": 0.47523073481552036,
+  "pr_auc": 0.009786204980799554,
+  "alert_rate": 0.01,
+  "threshold_validation": 0.030537072279507572,
+  "threshold_test": 0.030537072279507572,
+  "threshold_full": 0.030537072279507572,
+  "validation_alert_rate_observed": 0.01,
+  "test_alert_rate_observed": 0.009,
+  "test_fraud_base_rate": 0.01015,
+  "confusion_matrix": [
+    [
+      19618,
+      179
+    ],
+    [
+      202,
+      1
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9898082744702321,
+      "recall": 0.9909582259938374,
+      "f1-score": 0.9903829164247672,
+      "support": 19797
+    },
+    "1": {
+      "precision": 0.005555555555555556,
+      "recall": 0.0049261083743842365,
+      "f1-score": 0.005221932114882507,
+      "support": 203
+    },
+    "accuracy": 0.98095,
+    "macro avg": {
+      "precision": 0.4976819150128938,
+      "recall": 0.49794216718411083,
+      "f1-score": 0.49780242426982485,
+      "support": 20000
+    },
+    "weighted avg": {
+      "precision": 0.9798181093732483,
+      "recall": 0.98095,
+      "f1-score": 0.9803835324340218,
+      "support": 20000
+    }
+  },
+  "numeric_features": [
+    "Amount",
+    "txn_hour",
+    "txn_dayofweek",
+    "txn_day",
+    "txn_month"
+  ],
+  "categorical_features": [
+    "MerchantID",
+    "TransactionType",
+    "Location"
+  ],
+  "target_col": "IsFraud",
+  "split_counts": {
+    "train": 60000,
+    "validation": 20000,
+    "test": 20000
+  },
+  "notes": [
+    "Alert threshold selected using validation data only.",
+    "Only held-out test metrics should be used to evaluate generalization.",
+    "Full scored portfolio includes training records.",
+    "Fraud probability calibration has not been verified."
+  ]
+}

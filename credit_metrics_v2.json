@@ -1,0 +1,104 @@
+{
+  "evaluation": "stratified 60% train / 20% calibration / 20% test",
+  "train_size": 19548,
+  "validation_size": 6516,
+  "test_size": 6517,
+  "test_default_rate": 0.21819855761853613,
+  "mean_test_pd_raw": 0.3797639241858419,
+  "mean_test_pd_calibrated": 0.2196409470123672,
+  "baseline_brier_score": 0.17058794738393945,
+  "before_calibration": {
+    "roc_auc": 0.8710521194353694,
+    "average_precision": 0.7230309263389509,
+    "brier_score": 0.1381438749811753,
+    "log_loss": 0.4358762783556096,
+    "confusion_matrix_at_0_5": [
+      [
+        4190,
+        905
+      ],
+      [
+        308,
+        1114
+      ]
+    ],
+    "classification_report_at_0_5": {
+      "0": {
+        "precision": 0.9315251222765674,
+        "recall": 0.8223748773307163,
+        "f1-score": 0.8735536328572917,
+        "support": 5095
+      },
+      "1": {
+        "precision": 0.5517582961862308,
+        "recall": 0.7834036568213784,
+        "f1-score": 0.6474861958732927,
+        "support": 1422
+      },
+      "accuracy": 0.8138714132269449,
+      "macro avg": {
+        "precision": 0.7416417092313992,
+        "recall": 0.8028892670760474,
+        "f1-score": 0.7605199143652922,
+        "support": 6517
+      },
+      "weighted avg": {
+        "precision": 0.8486605485922865,
+        "recall": 0.8138714132269449,
+        "f1-score": 0.8242260441828639,
+        "support": 6517
+      }
+    }
+  },
+  "after_calibration": {
+    "roc_auc": 0.8710521194353694,
+    "average_precision": 0.7230309263389509,
+    "brier_score": 0.1023581950648927,
+    "log_loss": 0.33928963335363604,
+    "confusion_matrix_at_0_5": [
+      [
+        4834,
+        261
+      ],
+      [
+        627,
+        795
+      ]
+    ],
+    "classification_report_at_0_5": {
+      "0": {
+        "precision": 0.8851858633949826,
+        "recall": 0.9487733071638862,
+        "f1-score": 0.9158772262220538,
+        "support": 5095
+      },
+      "1": {
+        "precision": 0.7528409090909091,
+        "recall": 0.5590717299578059,
+        "f1-score": 0.6416464891041163,
+        "support": 1422
+      },
+      "accuracy": 0.8637409851158508,
+      "macro avg": {
+        "precision": 0.8190133862429458,
+        "recall": 0.753922518560846,
+        "f1-score": 0.778761857663085,
+        "support": 6517
+      },
+      "weighted avg": {
+        "precision": 0.8563083852577428,
+        "recall": 0.8637409851158508,
+        "f1-score": 0.8560404749282519,
+        "support": 6517
+      }
+    }
+  },
+  "lgd_assumption": 0.45,
+  "notes": [
+    "Base model uses balanced class weights.",
+    "Sigmoid calibration uses validation data only.",
+    "Full-data scores contain training records.",
+    "45% LGD is an assumed demonstration value.",
+    "Previously examined test results make cross-experiment comparisons exploratory."
+  ]
+}

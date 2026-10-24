@@ -73,7 +73,7 @@ def assign_risk_tier(pd_scores: pd.Series) -> pd.Series:
 
 
 def main():
-    project_dir = Path(r"C:\Users\Dell\Desktop\CreditFraudRisk")
+    project_dir = Path(__file__).resolve().parent
     data_path = project_dir / "credit_risk_dataset.csv"
 
     # Outputs

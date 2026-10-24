@@ -1,0 +1,45 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# macOS files
+.DS_Store
+
+# Credentials and secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Trained machine learning models
+*.pkl
+
+# Generated scored datasets
+credit_scored*.csv
+credit_test_scored*.csv
+fraud_scored*.csv
+fraud_test_scored*.csv
+fraud_logistic_scored.csv
+fraud_logistic_test_scored.csv
+
+# Local dashboard backups
+streamlit_app_backup.py
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Original repository assets
+# Keep local until redistribution permission is confirmed
+credit_risk_dataset.csv
+credit_card_fraud_dataset.csv
+Risk & Credit.pbix
+credit_model.py
+fraud_model.py
+make_visualizations.py

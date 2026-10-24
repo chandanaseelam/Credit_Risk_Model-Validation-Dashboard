@@ -120,7 +120,7 @@ def build_pipeline(numeric_features, categorical_features) -> Pipeline:
 
 
 def main():
-    project_dir = Path(r"C:\Users\Dell\Desktop\CreditFraudRisk")
+    project_dir = Path(__file__).resolve().parent
     data_path = project_dir / "credit_card_fraud_dataset.csv"
 
     model_path = project_dir / "fraud_pipeline.pkl"

@@ -14,7 +14,7 @@ from sklearn.metrics import (
 )
 
 
-PROJECT_DIR = Path(r"C:\Users\Dell\Desktop\CreditFraudRisk")
+PROJECT_DIR = Path(__file__).resolve().parent
 VIZ_DIR = PROJECT_DIR / "visualizations"
 CREDIT_SCORED = PROJECT_DIR / "credit_scored.csv"
 FRAUD_SCORED = PROJECT_DIR / "fraud_scored.csv"
