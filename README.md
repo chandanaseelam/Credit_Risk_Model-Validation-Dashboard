@@ -8,8 +8,6 @@
 
 ### [🚀 Open the Live Streamlit Dashboard](https://creditriskmodel-validation-dashboard-8ywl4lthbwtaabwvvzrxso.streamlit.app/)
 
-**[📁 View the GitHub Repository](https://github.com/chandanaseelam/Credit_Risk_Model-Validation-Dashboard)**
-
 The dashboard is deployed on Streamlit Community Cloud and can be opened directly in a browser. No local setup is required to explore the live application.
 
 > **Educational and portfolio project.** Results illustrate a model-development and validation workflow, **not** production-ready credit decisions, fraud prevention, or regulatory certification. The fraud models perform poorly on unseen data; their weaknesses are reported transparently.
